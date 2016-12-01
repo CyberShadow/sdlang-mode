@@ -18,7 +18,7 @@
   "Read file NAME, fontify it and return the HTML as a string."
   (save-current-buffer
     (find-file name)
-    (let ((hfy-optimizations (list 'body-text-only 'merge-adjacent-tags)))
+    (let ((hfy-optimisations (list 'body-text-only 'merge-adjacent-tags)))
       (with-current-buffer (htmlfontify-buffer) (buffer-string)))))
 
 (ert-deftest sdlang-mode-test-fontification ()

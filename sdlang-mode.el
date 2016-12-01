@@ -4,7 +4,7 @@
 ;; Author: Vladimir Panteleev
 ;; Url: https://github.com/CyberShadow/sdlang-mode
 ;; Keywords: languages
-;; Package-Requires: ((emacs "24.0"))
+;; Package-Requires: ((emacs "24.3"))
 
 ;; This file is not part of GNU Emacs.
 

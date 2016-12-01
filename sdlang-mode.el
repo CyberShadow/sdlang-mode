@@ -33,6 +33,7 @@
 ;;; Code:
 
 (require 'generic)
+(require 'rx)
 
 (defgroup sdlang-mode nil
   "Major mode for editing Simple Declarative Language files."

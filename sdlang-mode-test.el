@@ -1,0 +1,34 @@
+;;; sdlang-mode-test.el --- Tests for Simple Declarative Language major mode
+
+;;; Commentary:
+
+;;; Code:
+
+(require 'sdlang-mode nil t)
+
+(require 'htmlfontify)
+
+(defun sdlang-test-read-file (name)
+  "Read file NAME and return it as a string."
+  (with-temp-buffer
+    (insert-file-contents name)
+    (buffer-string)))
+
+(defun sdlang-test-htmlize-file (name)
+  "Read file NAME, fontify it and return the HTML as a string."
+  (save-current-buffer
+    (find-file name)
+    (let ((hfy-optimizations (list 'body-text-only 'merge-adjacent-tags)))
+      (with-current-buffer (htmlfontify-buffer) (buffer-string)))))
+
+(ert-deftest sdlang-mode-fontification ()
+  (should
+   (equal
+    (sdlang-test-htmlize-file "test.sdl")
+    (sdlang-test-read-file "test.sdl.html"))))
+
+;;----------------------------------------------------------------------------
+
+(provide 'sdlang-mode-test)
+
+;;; sdlang-mode-test.el ends here

@@ -1,130 +1,141 @@
-<span class="sdlang-mode-comment-face"># Test comments:
+<span class="comment"># Test comments:
 
-// C++ style</span>
+// C++ style
 
-<span class="comment">/*
+/*
 C style multiline
 */</span><span class="sdlang-mode-error-face">notcomment</span>
 
 <span class="sdlang-mode-tag-face">tag</span><span class="comment">/*foo=true*/</span><span class="sdlang-mode-attribute-face">bar</span><span class="sdlang-mode-punctuation-face">=</span><span class="sdlang-mode-boolean-face">false</span>
 
-<span class="sdlang-mode-tag-face">tag</span><span class="sdlang-mode-comment-face">#comment</span>
-<span class="sdlang-mode-tag-face">tag
+<span class="sdlang-mode-tag-face">tag</span><span class="comment">#comment
+</span><span class="sdlang-mode-tag-face">tag
 
-tag</span> <span class="sdlang-mode-comment-face">--comment</span>
-<span class="sdlang-mode-tag-face">tag</span>
+tag</span> <span class="comment">--comment
+</span><span class="sdlang-mode-tag-face">tag</span>
 
-<span class="sdlang-mode-comment-face"># Test strings:</span>
+<span class="comment">/* test &quot;string&quot; test */
+// test &quot;string&quot; test
+-- test &quot;string&quot; test
+# test &quot;string&quot; test
 
+/- notcomment
+-/ notcomment
+
+// comment */ comment
+# comment */ comment
+
+# Test strings:
+</span>
 <span class="sdlang-mode-tag-face">tag</span><span class="string">&quot;string&quot;</span><span class="sdlang-mode-error-face">error</span>
 <span class="sdlang-mode-tag-face">tag</span><span class="string">&quot;string\&quot;string&quot;</span><span class="sdlang-mode-error-face">error</span>
 <span class="sdlang-mode-tag-face">tag</span><span class="string">`string&quot;\&quot;string\`</span><span class="sdlang-mode-error-face">error</span>
 
-<span class="sdlang-mode-comment-face"># Test data:</span>
-
-<span class="sdlang-mode-punctuation-face">[</span><span class="sdlang-mode-data-face">test</span><span class="sdlang-mode-punctuation-face">]</span> <span class="sdlang-mode-comment-face"># test
-// foo</span>
-<span class="sdlang-mode-punctuation-face">[</span><span class="sdlang-mode-data-face">sdf789GSfsb</span>
-<span class="sdlang-mode-error-face">#!&lt;(</span><span class="sdlang-mode-data-face">ERROR</span><span class="sdlang-mode-error-face">)&gt;</span>
-<span class="sdlang-mode-data-face">2+3324sf2</span><span class="sdlang-mode-punctuation-face">]</span> <span class="sdlang-mode-comment-face"># aoeu
+<span class="comment"># Test data:
+</span>
+<span class="sdlang-mode-punctuation-face">[</span><span class="sdlang-mode-data-face">test</span><span class="sdlang-mode-punctuation-face">]</span> <span class="comment"># test
+// foo
+</span><span class="sdlang-mode-punctuation-face">[</span><span class="sdlang-mode-data-face">sdf789GSfsb</span>
+<span class="sdlang-mode-error-face">!&lt;(</span><span class="sdlang-mode-data-face">ERROR</span><span class="sdlang-mode-error-face">)&gt;</span>
+<span class="sdlang-mode-data-face">2+3324sf2</span><span class="sdlang-mode-punctuation-face">]</span> <span class="comment"># aoeu
 # bar
-// bar</span>
-<span class="sdlang-mode-tag-face">foo</span> <span class="sdlang-mode-attribute-face">a</span><span class="sdlang-mode-punctuation-face">=</span><span class="sdlang-mode-boolean-face">true</span>
+// bar
+</span><span class="sdlang-mode-tag-face">foo</span> <span class="sdlang-mode-attribute-face">a</span><span class="sdlang-mode-punctuation-face">=</span><span class="sdlang-mode-boolean-face">true</span>
 
-<span class="sdlang-mode-comment-face"># TODO:</span>
+<span class="comment"># TODO:
 
-<span class="comment">/*comment*/</span> <span class="sdlang-mode-error-face">tag</span>
+/*comment*/</span> <span class="sdlang-mode-error-face">tag</span>
 
-<span class="sdlang-mode-comment-face">---------------------------------------------------------
+<span class="comment">---------------------------------------------------------
 
-// This is a node with a single string value</span>
-<span class="sdlang-mode-tag-face">title</span> <span class="string">&quot;Hello, World&quot;</span>
+// This is a node with a single string value
+</span><span class="sdlang-mode-tag-face">title</span> <span class="string">&quot;Hello, World&quot;</span>
 
-<span class="sdlang-mode-comment-face">// Multiple values are supported, too</span>
-<span class="sdlang-mode-tag-face">bookmarks</span> <span class="sdlang-mode-number-face">12 15 188 1234</span>
+<span class="comment">// Multiple values are supported, too
+</span><span class="sdlang-mode-tag-face">bookmarks</span> <span class="sdlang-mode-number-face">12 15 188 1234</span>
 
-<span class="sdlang-mode-comment-face">// Nodes can have attributes</span>
-<span class="sdlang-mode-tag-face">author</span> <span class="string">&quot;Peter Parker&quot;</span> <span class="sdlang-mode-attribute-face">email</span><span class="sdlang-mode-punctuation-face">=</span><span class="string">&quot;peter@example.org&quot;</span> <span class="sdlang-mode-attribute-face">active</span><span class="sdlang-mode-punctuation-face">=</span><span class="sdlang-mode-boolean-face">true</span>
+<span class="comment">// Nodes can have attributes
+</span><span class="sdlang-mode-tag-face">author</span> <span class="string">&quot;Peter Parker&quot;</span> <span class="sdlang-mode-attribute-face">email</span><span class="sdlang-mode-punctuation-face">=</span><span class="string">&quot;peter@example.org&quot;</span> <span class="sdlang-mode-attribute-face">active</span><span class="sdlang-mode-punctuation-face">=</span><span class="sdlang-mode-boolean-face">true</span>
 
-<span class="sdlang-mode-comment-face">// Nodes can be arbitrarily nested</span>
-<span class="sdlang-mode-tag-face">contents</span> <span class="sdlang-mode-punctuation-face">{</span>
+<span class="comment">// Nodes can be arbitrarily nested
+</span><span class="sdlang-mode-tag-face">contents</span> <span class="sdlang-mode-punctuation-face">{</span>
 <span class="sdlang-mode-error-face">	</span><span class="sdlang-mode-tag-face">section</span> <span class="string">&quot;First section&quot;</span> <span class="sdlang-mode-punctuation-face">{</span>
 <span class="sdlang-mode-error-face">		</span><span class="sdlang-mode-tag-face">paragraph</span> <span class="string">&quot;This is the first paragraph&quot;</span>
 <span class="sdlang-mode-error-face">		</span><span class="sdlang-mode-tag-face">paragraph</span> <span class="string">&quot;This is the second paragraph&quot;</span>
 <span class="sdlang-mode-error-face">	</span><span class="sdlang-mode-punctuation-face">}
 }</span>
 
-<span class="sdlang-mode-comment-face">// Anonymous nodes are supported</span>
-<span class="string">&quot;This text is the value of an anonymous node!&quot;</span>
+<span class="comment">// Anonymous nodes are supported
+</span><span class="string">&quot;This text is the value of an anonymous node!&quot;</span>
 
-<span class="sdlang-mode-comment-face">// This makes things like matrix definitions very convenient</span>
-<span class="sdlang-mode-tag-face">matrix</span> <span class="sdlang-mode-punctuation-face">{</span>
+<span class="comment">// This makes things like matrix definitions very convenient
+</span><span class="sdlang-mode-tag-face">matrix</span> <span class="sdlang-mode-punctuation-face">{</span>
 <span class="sdlang-mode-error-face">	</span><span class="sdlang-mode-number-face">1 0 0</span>
 <span class="sdlang-mode-error-face">	</span><span class="sdlang-mode-number-face">0 1 0</span>
 <span class="sdlang-mode-error-face">	</span><span class="sdlang-mode-number-face">0 0 1</span>
 <span class="sdlang-mode-punctuation-face">}</span>
 
-<span class="sdlang-mode-comment-face">---------------------------------------------------------
+<span class="comment">---------------------------------------------------------
 
-// Strings</span>
-<span class="string">&quot;String \&quot;with escape support\&quot;&quot;
+// Strings
+</span><span class="string">&quot;String \&quot;with escape support\&quot;&quot;
 `String &quot;without escape support&quot;`</span>
 
-<span class="sdlang-mode-comment-face">// Numbers</span>
-<span class="sdlang-mode-number-face">10</span>    <span class="sdlang-mode-comment-face">// 32-bit integer</span>
-<span class="sdlang-mode-number-face">10.5</span>  <span class="sdlang-mode-comment-face">// 64-bit float (double)</span>
-<span class="sdlang-mode-number-face">10L</span>   <span class="sdlang-mode-comment-face">// 64-bit integer</span>
-<span class="sdlang-mode-number-face">10BD</span>  <span class="sdlang-mode-comment-face">// 128-bit integer</span>
-<span class="sdlang-mode-number-face">10.5f</span> <span class="sdlang-mode-comment-face">// 32-bit float
+<span class="comment">// Numbers
+</span><span class="sdlang-mode-number-face">10</span>    <span class="comment">// 32-bit integer
+</span><span class="sdlang-mode-number-face">10.5</span>  <span class="comment">// 64-bit float (double)
+</span><span class="sdlang-mode-number-face">10L</span>   <span class="comment">// 64-bit integer
+</span><span class="sdlang-mode-number-face">10BD</span>  <span class="comment">// 128-bit integer
+</span><span class="sdlang-mode-number-face">10.5f</span> <span class="comment">// 32-bit float
 
-// Boolean and null values</span>
-<span class="sdlang-mode-boolean-face">true</span>  <span class="sdlang-mode-comment-face">// boolean true</span>
-<span class="sdlang-mode-boolean-face">false</span> <span class="sdlang-mode-comment-face">// boolean false</span>
-<span class="sdlang-mode-boolean-face">on</span>    <span class="sdlang-mode-comment-face">// boolean true</span>
-<span class="sdlang-mode-boolean-face">off</span>   <span class="sdlang-mode-comment-face">// boolean false</span>
-<span class="sdlang-mode-boolean-face">null</span>  <span class="sdlang-mode-comment-face">// a null value
+// Boolean and null values
+</span><span class="sdlang-mode-boolean-face">true</span>  <span class="comment">// boolean true
+</span><span class="sdlang-mode-boolean-face">false</span> <span class="comment">// boolean false
+</span><span class="sdlang-mode-boolean-face">on</span>    <span class="comment">// boolean true
+</span><span class="sdlang-mode-boolean-face">off</span>   <span class="comment">// boolean false
+</span><span class="sdlang-mode-boolean-face">null</span>  <span class="comment">// a null value
 
-// Date/time formats</span>
-<span class="sdlang-mode-date-face">2015/12/06 12:00:00.000-UTC</span> <span class="sdlang-mode-comment-face">// Date/time value (UTC timezone)</span>
-<span class="sdlang-mode-date-face">2015/12/06 12:00:00.000</span>     <span class="sdlang-mode-comment-face">// Date/time value (local time)</span>
-<span class="sdlang-mode-date-face">2015/12/06</span>                  <span class="sdlang-mode-comment-face">// Date value</span>
-<span class="sdlang-mode-date-face">12:14:34</span>     <span class="sdlang-mode-comment-face">// Duration: 12 hours, 14 minutes, 34 seconds</span>
-<span class="sdlang-mode-date-face">12:14:34.123</span> <span class="sdlang-mode-comment-face">// 12 h, 14 min, 34 s, 123 ms</span>
-<span class="sdlang-mode-date-face">2d:12:14:34</span>  <span class="sdlang-mode-comment-face">// 2 days, 12 h, 14 min, 34 s
+// Date/time formats
+</span><span class="sdlang-mode-date-face">2015/12/06 12:00:00.000-UTC</span> <span class="comment">// Date/time value (UTC timezone)
+</span><span class="sdlang-mode-date-face">2015/12/06 12:00:00.000</span>     <span class="comment">// Date/time value (local time)
+</span><span class="sdlang-mode-date-face">2015/12/06</span>                  <span class="comment">// Date value
+</span><span class="sdlang-mode-date-face">12:14:34</span>     <span class="comment">// Duration: 12 hours, 14 minutes, 34 seconds
+</span><span class="sdlang-mode-date-face">12:14:34.123</span> <span class="comment">// 12 h, 14 min, 34 s, 123 ms
+</span><span class="sdlang-mode-date-face">2d:12:14:34</span>  <span class="comment">// 2 days, 12 h, 14 min, 34 s
 
-// Binary data (Base64 encoded)</span>
-<span class="sdlang-mode-punctuation-face">[</span><span class="sdlang-mode-data-face">sdf789GSfsb2+3324sf2</span><span class="sdlang-mode-punctuation-face">]</span>
+// Binary data (Base64 encoded)
+</span><span class="sdlang-mode-punctuation-face">[</span><span class="sdlang-mode-data-face">sdf789GSfsb2+3324sf2</span><span class="sdlang-mode-punctuation-face">]</span>
 
-<span class="sdlang-mode-comment-face">------------------------------------------------------------
+<span class="comment">------------------------------------------------------------
 
-// C++ style</span>
+// C++ style
 
-<span class="comment">/*
+/*
 C style multiline
 */</span>
 
 <span class="sdlang-mode-tag-face">tag</span> <span class="comment">/*foo=true*/</span> <span class="sdlang-mode-attribute-face">bar</span><span class="sdlang-mode-punctuation-face">=</span><span class="sdlang-mode-boolean-face">false</span>
 
-<span class="sdlang-mode-comment-face"># Shell style
+<span class="comment"># Shell style
 
--- Lua style</span>
-<span class="sdlang-mode-error-face">			</span>
-<span class="sdlang-mode-comment-face">------------------------------------------------------------
+-- Lua style
+</span><span class="sdlang-mode-error-face">			</span>
+<span class="comment">------------------------------------------------------------
 
-// Trailing semicolons are optional</span>
-<span class="sdlang-mode-tag-face">title</span> <span class="string">&quot;Some title&quot;</span><span class="sdlang-mode-punctuation-face">;</span>
+// Trailing semicolons are optional
+</span><span class="sdlang-mode-tag-face">title</span> <span class="string">&quot;Some title&quot;</span><span class="sdlang-mode-punctuation-face">;</span>
 
-<span class="sdlang-mode-comment-face">// They can be used to separate multiple nodes</span>
-<span class="sdlang-mode-tag-face">title</span> <span class="string">&quot;Some title&quot;</span><span class="sdlang-mode-punctuation-face">;</span> <span class="sdlang-mode-tag-face">author</span> <span class="string">&quot;Peter Parker&quot;</span>
+<span class="comment">// They can be used to separate multiple nodes
+</span><span class="sdlang-mode-tag-face">title</span> <span class="string">&quot;Some title&quot;</span><span class="sdlang-mode-punctuation-face">;</span> <span class="sdlang-mode-tag-face">author</span> <span class="string">&quot;Peter Parker&quot;</span>
 
-<span class="sdlang-mode-comment-face">// Tags may contain certain non-alphanumeric characters</span>
-<span class="sdlang-mode-tag-face">this-is_a.valid$tag-name</span>
+<span class="comment">// Tags may contain certain non-alphanumeric characters
+</span><span class="sdlang-mode-tag-face">this-is_a.valid$tag-name</span>
 
-<span class="sdlang-mode-comment-face">// Namespaces are supported</span>
-<span class="sdlang-mode-namespace-face">renderer</span><span class="sdlang-mode-punctuation-face">:</span><span class="sdlang-mode-tag-face">options</span> <span class="string">&quot;invisible&quot;</span>
+<span class="comment">// Namespaces are supported
+</span><span class="sdlang-mode-namespace-face">renderer</span><span class="sdlang-mode-punctuation-face">:</span><span class="sdlang-mode-tag-face">options</span> <span class="string">&quot;invisible&quot;</span>
 <span class="sdlang-mode-namespace-face">physics</span><span class="sdlang-mode-punctuation-face">:</span><span class="sdlang-mode-tag-face">options</span> <span class="string">&quot;nocollide&quot;</span>
 
-<span class="sdlang-mode-comment-face">// Tags can be separated into multiple lines</span>
-<span class="sdlang-mode-tag-face">title</span> <span class="sdlang-mode-punctuation-face">\</span>
+<span class="comment">// Tags can be separated into multiple lines
+</span><span class="sdlang-mode-tag-face">title</span> <span class="sdlang-mode-punctuation-face">\</span>
 <span class="sdlang-mode-error-face">	</span><span class="string">&quot;Some title&quot;</span>
 <span class="sdlang-mode-error-face">			</span>

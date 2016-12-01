@@ -14,6 +14,17 @@ tag
 tag --comment
 tag
 
+/* test "string" test */
+// test "string" test
+-- test "string" test
+# test "string" test
+
+/- notcomment
+-/ notcomment
+
+// comment */ comment
+# comment */ comment
+
 # Test strings:
 
 tag"string"error
@@ -25,7 +36,7 @@ tag`string"\"string\`error
 [test] # test
 // foo
 [sdf789GSfsb
-#!<(ERROR)>
+!<(ERROR)>
 2+3324sf2] # aoeu
 # bar
 // bar

@@ -40,10 +40,10 @@
   :link '(url-link "https://sdlang.org/")
   :group 'languages)
 
-(defface sdlang-mode-comment-face
-  '((t :inherit font-lock-comment-face))
-  "Font for comments."
-  :group 'sdlang-mode)
+;; (defface sdlang-mode-comment-face
+;;   '((t :inherit font-lock-comment-face))
+;;   "Font for comments."
+;;   :group 'sdlang-mode)
 
 (defface sdlang-mode-tag-face
   '((t :inherit font-lock-keyword-face))
@@ -117,7 +117,7 @@
      )
 
     ;; Comments
-    ("\\(?:--\\|//\\|#\\).*$" . 'sdlang-mode-comment-face)
+    ;; ("\\(?:--\\|//\\|#\\).*$" . 'sdlang-mode-comment-face)
 
     ;; WYSIWYG strings
     ;; ("`.*`" . 'sdlang-mode-string-face)
@@ -207,17 +207,17 @@
 
 (setq sdlang-mode-syntax-table
       (let ((table (make-syntax-table)))
-        (modify-syntax-entry ?\/ ". 14" table) ; /* and //
-        (modify-syntax-entry ?* ". 23" table)  ; */
-        ;; (modify-syntax-entry ?\/ ". 124b" table) ; /* and //
+        ;; (modify-syntax-entry ?\/ ". 14" table) ; /*
         ;; (modify-syntax-entry ?* ". 23" table)  ; */
-        ;; (modify-syntax-entry ?\n "> bc" table)
-        ;; (modify-syntax-entry ?# "< b" table)
-        ;; (modify-syntax-entry ?- ". 12c" table)
+        (modify-syntax-entry ?\/ ". 124ab" table) ; /* */ and //
+        (modify-syntax-entry ?* ". 23" table)  ; /* */
+        (modify-syntax-entry ?# "< b" table)   ; #
+        (modify-syntax-entry ?- "w 12b" table) ; --
+        (modify-syntax-entry ?\n "> b" table)  ; end of // -- #
 
 	(modify-syntax-entry ?` "\"" table)
 
-	(modify-syntax-entry ?- "w" table)
+	;; (modify-syntax-entry ?- "w" table)
 	(modify-syntax-entry ?_ "w" table)
 	(modify-syntax-entry ?. "w" table)
         table))
